@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+.leftbarFriend{
+    @include flex-center;
+    margin-bottom: 15px;
+
+    .leftbarFriendProfilePicture{
+        @include profile-picture(32px);
+        margin-right: 10px;
+    }
+}

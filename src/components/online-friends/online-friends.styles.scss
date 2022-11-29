@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+.rightbarFriendsListItem{
+    @include flex-center;
+    margin-bottom: 15px;
+
+    .rightbarFriendsListItemProfile{
+        position: relative;
+        margin-right: 10px;
+
+        .rightbarFriendsListItemProfileImage{
+            @include profile-picture(40px);
+        }
+        .rightbarFriendsListItemProfileBadge{
+            position: absolute;
+            top: -2px;
+            right: 0;
+            border: 2px solid white;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: limegreen;
+        }
+    }
+    .rightbarFriendsListItemUsername{
+        font-weight: 500;
+    }
+}

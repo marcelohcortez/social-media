@@ -1,0 +1,14 @@
+@import '../../index.scss';
+
+.birthdayContainer{
+    @include flex-center;
+
+    .birthdayImage{
+        width: 40px;
+        height: 40px;
+    }
+    .birthdayText{
+        font-weight: 300;
+        font-size: 15px;
+    }
+}

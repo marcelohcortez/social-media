@@ -1,0 +1,74 @@
+@import '../../index.scss';
+
+.post{
+    @include box-shadow;
+    width: 100%;
+    margin: 30px 0;
+
+    .postWrapper{
+        padding: 10px;
+    }
+    .postTop{
+        @include flex-center;
+        justify-content: space-between;
+
+        .postTopLeft{
+            @include flex-center;
+
+            .postProfileImage{
+                @include profile-picture(32px);
+            }
+            .postUserName{
+                font-size: 15px;
+                font-weight: 500;
+                margin: 0 10px;
+            }
+            .postDate{
+                font-size: 12px;
+            }
+        }
+    }
+    .postContent{
+        margin: 20px 0;
+        
+        .postContentImage{
+            margin-top: 20px;
+            width:100%;
+            max-height: 500px;
+            object-fit: contain;
+        }
+    }
+    .postBottom{
+        @include flex-center;
+        justify-content: space-between;
+
+        .postBottomLeft{
+            @include flex-center;
+            justify-content: space-between;
+
+            .postBottomLeftLike{
+                @include flex-center;
+                margin-right: 30px;
+            }
+            .postBottomLeftFavorite{
+                @include flex-center;
+            }
+            .postBottomLeftIcon{
+                width: 24px;
+                height: 24px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            .postBottomLeftLikeCounter{
+                font-size: 15px;
+            }
+        }
+        .postBottomRight{
+            .postBottomRightCommentCounter{
+                cursor: pointer;
+                border-bottom: 1px dashed gray;
+                font-size: 15px;
+            }
+        }
+    }
+}
