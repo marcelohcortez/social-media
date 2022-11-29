@@ -1,10 +1,10 @@
 # The Social
 
 This is a simple project with 'home' and 'profile'.
-The project was built using React and SASS.
+The project was built using React, SASS and Yarn.
 No integration with DB yet, so all data is fetched from an array with objects.
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
