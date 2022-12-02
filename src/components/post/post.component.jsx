@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { MoreVert } from '@mui/icons-material'
 import { Users } from '../../dummyData'
 
+import heartIcon from '../../assets/heart.png'
+import likeIcon from '../../assets/like.png'
+
 import './post.styles.scss'
 
 const Post = ({ postContent }) => {
@@ -41,11 +44,11 @@ const Post = ({ postContent }) => {
             <div className="postBottom">
                 <div className="postBottomLeft">
                     <div className="postBottomLeftLike">
-                        <img className="postBottomLeftIcon" src="assets/like.png" alt="" onClick={likeHandler}/>
+                        <img className="postBottomLeftIcon" src={ likeIcon } alt="" onClick={likeHandler}/>
                         <span className="postBottomLeftLikeCounter">{like} people liked it</span>
                     </div>
                     <div className="postBottomLeftFavorite">
-                        <img className="postBottomLeftIcon" src="assets/heart.png" alt="" onClick={favoriteHandler}/>
+                        <img className="postBottomLeftIcon" src={ heartIcon } alt="" onClick={favoriteHandler}/>
                         <span className="postBottomLeftLikeCounter">{favorite} people favorited it</span>
                     </div>
                 </div>
